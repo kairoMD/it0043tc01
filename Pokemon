@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Pokemon Form</title>
+</head>
+<body>
+<center><form>
+<label for="ND">National Dex:</label>
+<input type="text" id="ND" name="ND" min="0"><br><br><br>
+
+<input type="radio" id="gen1" name="Generation">
+  <label for="Generation 1">Generation 1</label>
+  <input type="radio" id="gen2" name="Generation">
+  <label for="Generation 2" >Generation 2</label>
+  <input type="radio" id="gen3" name="Generation">
+  <label for="Generation 3">Generation 3</label>
+<input type="radio" id="gen4" name="Generation">
+  <label for="Generation 4">Generation 4</label>
+<input type="radio" id="gen5" name="Generation">
+  <label for="Generation 5">Generation 5</label>
+<input type="radio" id="gen5" name="Generation">
+  <label for="Generation 6">Generation 6</label>
+<input type="radio" id="gen6" name="Generation">
+  <label for="Generation 7">Generation 7</label>
+<input type="radio" id="gen7" name="Generation">
+  <label for="Generation 8">Generation 8</label>
+<input type="radio" id="gen8" name="Generation">
+  <label for="Generation 9">Generation 9</label>
+<br><br><br>
+
+<label for="PN">Pokemon Name:</label>
+<input type="text" id="PK" name="PK"><br><br><br>
+<label for="img">Select image:</label>
+<input type="file" id="img" name="img" accept="image/*"><br><br>
+
+<label for="tp1">Type1:</label>
+<select id="tp1" name="tp1">
+<option value="normal">Normal</option>
+<option value="fire">Fire</option>
+<option value="water">Water</option>
+<option value="electric">Electric</option>
+<option value="grass">Grass</option>
+<option value="ice">Ice</option>
+<option value="fighting">Fighting</option>
+<option value="poison">Poison</option>
+<option value="ground">Ground</option>
+</select>
+
+<label for="tp2">Type2:</label>
+<select id="tp2" name="tp2">
+<option value="flying">Flying</option>
+<option value="psychic">Psychic</option>
+<option value="bug">Bug</option>
+<option value="rock">Rock</option>
+<option value="ghost">Ghost</option>
+<option value="dragon">Dragon</option>
+<option value="dark">Dark</option>
+<option value="steel">Steel</option>
+<option value="fairy">Fairy</option>
+</select><br><br>
+
+<label for="NK">Nickname:</label>
+<input type="text" id="NK" name="NK" ><br><br>
+<label for="birthday">Birthday:</label>
+<input type="date" id="birthday" name="birthday"><br><br>
+<input type="submit"><br><br>
+</form></center>
+
+<table align="center" border= "1" >
+<tr align="center">
+<th>National Dex</th>
+<th>Generation</th>
+<th>Pokemon Name</th>
+<th>Image</th>
+<th>Type 1</th>
+<th>Type 2</th>
+<th>Evolves From</th>
+<th>volves To</th>
+<th>Nickname</th>
+<th>Birthday</th>
+</tr>
+<tr align="center">
+<td>1</td>
+<td>Generation 1</td>
+<td>Bulbasaur</td>
+<td>Charmander</td>
+<td colspan="2">Grass</td>
+<td>-</td>
+<td>Ivysaur</td>
+<td>Palaka</td>
+<td>01-01-2024</td>
+</tr>
+<tr align="center">
+<td>4</td>
+<td>Generation 1</td>
+<td>Charmander</td>
+<td>Charmander</td>
+<td colspan="2">Poison</td>
+<td colspan="2">Fire</td>
+<td colspan="2"></td>
+<td>-</td>
+</tr>
+<tr align="center">
+<td>7</td>
+<td>Generation 1</td>
+<td>Squirtle</td>
+<td>Squirtle</td>
+<td colspan="2">water</td>
+<td colspan="2"></td>
+<td>-</td>
+</tr>
+</table>
+
+</body>
+</html>
