@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+body{
+    background-image: url(backg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+  }
+  
+  .logo{
+    padding-left: 700px;
+    width: 500px;
+    bottom: 25px;
+    right: 800px;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 10px;
+    color: white;
+    background-color: #E62829;
+  }
+  
+  .card-content h2 {
+    padding: 10px;
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  .card-content p {
+    margin-bottom: 0;
+  }
+  
+  .column {
+    margin-top: 50px;
+    text-align: center;
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+  }
+
+.types {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .type-box {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #3DCEF3; 
+    color: white;
+    border-radius: 5px;
+  }
+
+  .type-box1{
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #EF70EF; 
+    color: white;
+    border-radius: 5px;
+  }
+
+
+  .type-box2 {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #2596be; 
+    color: white;
+    border-radius: 5px;
+  }
+
+  .type-box3 {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: orange; 
+    color: white;
+    border-radius: 5px;
+  }
+
+  .type-box9 {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #86bcec; 
+    color: white;
+    border-radius: 5px;
+  }
+
+  .type-box4 {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #654c4c; 
+    color: white;
+    border-radius: 5px;
+  }
+
+  .type-box5 {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #3cccf4; 
+    color: white;
+    border-radius: 5px;
+  }
+
+
+  .type-box6 {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #f45484; 
+    color: white;
+    border-radius: 5px;
+  }
+  .type-box7{
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #8dbcf7; 
+    color: white;
+    border-radius: 5px;
+  }
+
+  .type-box8{
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #EF4179; 
+    color: white;
+    border-radius: 5px;
+  }
