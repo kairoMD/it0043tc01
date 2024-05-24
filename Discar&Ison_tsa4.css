@@ -7,14 +7,34 @@ body{
     font-family: 'Baloo Paaji 2', cursive;
 }
 
+.hover-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 10px 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+
+.hover-button:hover {
+  background-color: red;
+}
 
 .card {
     width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border: 3px solid #ccc;
+    border-radius: 25px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    box-shadow: 0 15px 25px black;
     margin: 20px auto;
+    position: relative;
   }
   
   .logo{
@@ -30,8 +50,8 @@ body{
   
   .card-content {
     padding: 10px;
-    color: white;
-    background-color: #E62829;
+    color: black;
+    background-color: #f4e47c;
   }
   
   .card-content h2 {
@@ -137,3 +157,5 @@ body{
     color: white;
     border-radius: 5px;
   }
+
+  
