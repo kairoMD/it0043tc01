@@ -116,19 +116,25 @@ img{
 
 }
 @media(max-width:400px){
+    .container{
+        transition: 500ms;
+    }
     .box{
         width: 100%;
         justify-content: space-between;
         display: flex;
         flex-direction: column;
+        
     }
     img{
         width:  120px;
         padding-left: 30px;
+        transition: 500ms;
     }
     .name{
         display: inline-block;
         padding-left: 35px;
+        transition: 500ms;
     }
     .type{
         display: inline-block;
@@ -138,6 +144,7 @@ img{
         padding-left: 5px;
         position: static;
         text-align: center;
+        transition: 500ms;
     }
     #p{
         display: none;
