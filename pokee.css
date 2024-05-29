@@ -1,0 +1,109 @@
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.poke1{
+    flex: 1;
+    background-color: yellow;
+    border: 1px;
+    margin: 20px;
+    padding: 5px;
+}
+.poke2{
+    flex: 1;
+    background-color: burlywood;
+    border: 1px;
+    margin: 20px;
+    padding: 5px;
+}
+.poke3{
+    flex: 1;
+    background-color: pink;
+    border: 1px;
+    margin: 20px;
+    padding: 5px;
+}
+.poke4{
+    flex: 1;
+    background-color: orange;
+    border: 1px;
+    margin: 20px;
+    padding: 5px;
+}
+.poke5{
+    flex: 1;
+    background-color: #f4dcbc;
+    border: 1px;
+    margin: 20px;
+    padding: 5px;
+}
+.poke6{
+    flex: 1;
+    background-color: rgb(36,92,156)    ;
+    border: 1px;
+    margin: 20px;
+    padding: 5px;
+}
+.poke7{
+    flex: 1;
+    background-color: #e0c48c;
+    border: 1px;
+    margin: 20px;
+    padding: 5px;
+}
+.poke8{
+    flex: 1;
+    background-color: #e4a33c;
+    border: 1px;
+    margin: 20px;
+    padding: 5px;
+}
+.poke9{
+    flex: 1;
+    background-color: #ec7cbc;
+    border: 1px;
+    margin: 20px;
+    padding: 5px;
+}
+.poke10{
+    flex: 1;
+    background-color: yellow;
+    border: 1px;
+    margin: 20px;
+    padding: 5px;
+}
+.poke11{
+    flex: 1;
+    background-color: #e0a41c;
+    border: 1px;
+    margin: 20px;
+    padding: 5px;
+}
+.poke12{
+    flex: 1;
+    background-color: #e86414;
+    border: 1px;
+    margin: 20px;
+    padding: 5px;
+}
+.sideimage{
+    width: 60px;
+    height: 60px;
+}
+.pokemon:hover {
+    background-color: red;
+  }
+@media (max-width:768px){
+    .container{
+        flex-direction: column;
+    }
+}
