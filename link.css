@@ -143,8 +143,9 @@ button>a {
 
 .wel-gta img {
     border-radius: 8px;
-    width: 900px;
-    height: 600px;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
 
 }
 
@@ -206,7 +207,8 @@ body .upd-container {
 }
 
 .cardss img {
-    height: 350px;
+    width: 90%;
+    height: auto;
     box-shadow: 5px 5px 5px grey;
     border-radius: 8px;
 }
@@ -243,6 +245,10 @@ body .upd-container {
         margin: 2rem;
     }
 
+    .cardss img {
+        max-height: 250px;
+    }
+    
     
 }
 
@@ -257,12 +263,25 @@ body .upd-container {
         margin: 2rem;
     }
 
-    
+    .cardss img {
+        max-height: 200px;
+    }
 
+    .wel-gta {
+        width: 75vw;
+    }
 }
 
 @media (max-width: 650px) {
     .nav {
         font-size: 1rem;
+    }
+
+    .wel-gta {
+        width: 90vw;
+    }
+
+    .wel-gta img {
+        max-width: 100%;
     }
 }
