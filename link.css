@@ -175,7 +175,7 @@ body .char-container {
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 
 body .upd-container {
@@ -215,6 +215,10 @@ body .upd-container {
 
 .cardss:hover {
     transform: scale(1.05);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s;
+
 }
 
 .footerbottom {
@@ -239,7 +243,8 @@ body .upd-container {
         margin: 1.2rem;
     }
 
-    .card, .cardss {
+    .card,
+    .cardss {
         display: inline-block;
         width: 46%;
         margin: 2rem;
@@ -248,8 +253,8 @@ body .upd-container {
     .cardss img {
         max-height: 250px;
     }
-    
-    
+
+
 }
 
 @media(max-width: 800px) {
@@ -257,7 +262,8 @@ body .upd-container {
         flex-wrap: wrap;
     }
 
-    .card, .cardss{
+    .card,
+    .cardss {
         display: block;
         width: 85%;
         margin: 2rem;
