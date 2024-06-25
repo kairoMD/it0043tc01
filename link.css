@@ -279,7 +279,7 @@ body .upd-container {
 }
 
 @media (max-width: 650px) {
-    .nav {
+    .nav-b {
         font-size: 1rem;
     }
 
