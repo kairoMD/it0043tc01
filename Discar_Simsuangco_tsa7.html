@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Discar_Simsuangco.css">
+    <title>Simulator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-box">
+          <h2>Reset Flexbox</h2>
+          <button onclick="resetFlexbox()">Reset</button>
+          <input type="text" id="gap">
+          <button onclick="setGap()">Gap</button>
+          <h2>Flex Direction</h2>
+          <button onclick="setFlexDirection('row')">Row</button>
+          <button onclick="setFlexDirection('column')">Column</button>
+          <h2>Justify Content</h2>
+          <button onclick="setJustifyContent('start')">Start</button>
+          <button onclick="setJustifyContent('center')">Center</button>
+          <button onclick="setJustifyContent('end')">End</button>
+          <button onclick="setJustifyContent('space-between')">Space Between</button>
+          <button onclick="setJustifyContent('space-around')">Space Around</button>
+          <button onclick="setJustifyContent('space-evenly')">Space Evenly</button>
+          <h2>Align Items</h2>
+          <button onclick="setAlignItems('start')">Start</button>
+          <button onclick="setAlignItems('center')">Center</button>
+          <button onclick="setAlignItems('end')">End</button>
+          <h2>Flex Grow</h2>
+          <button onclick="setFlexGrow('reset')">Reset</button>
+          <button onclick="setFlexGrow('grow-all')">Grow All</button>
+          <input type="text" id="grow-b1" >
+          <button onclick="setFlexGrow('grow-b1')">Set Grow B-1</button>
+          <input type="text" id="grow-b2" >
+          <button onclick="setFlexGrow('grow-b2')">Set Grow B-2</button>
+          <input type="text" id="grow-b3">
+          <button onclick="setFlexGrow('grow-b3')">Set Grow B-3</button>
+        </div>
+
+        <div class="fcon" id="flCon">
+          <div class="fitem">1</div>
+          <div class="fitem">2</div>
+          <div class="fitem">3</div>
+        </div>
+      </div>
+
+   <script src="box.js"></script>
+</body>
+</html>
