@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
   margin: 0;
   height: auto;
@@ -28,6 +29,7 @@ body{
   padding: 30px;
   margin-right: 20px;
   width: 300px;
+  border-radius: 15px;
 }
 
 .main-box h2 {
@@ -54,12 +56,11 @@ body{
 
 .fcon {
   background-color: black;
-  padding: 270px;
+  padding: 20px;
+  height: 770px;
   flex-grow: 1;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   border-radius: 15px;
 }
 
