@@ -22,7 +22,27 @@ function setalignitems(v) {
     x.style.alignItems = v;
     console.log(`Align-Items: ${x.style.alignItems}`);
 }
-
+function resetbox() {
+    let f = document.getElementById("flCon");
+    f.style.gap = '0';
+    document.getElementById("gap").value = '0';
+    
+    f.style.flexDirection = "row";
+    f.style.justifyContent = "flex-start";
+    f.style.alignItems = "flex-start";
+    
+    document.getElementById("grow-b1").value = '0';
+    document.getElementById("grow-b2").value = '0';
+    document.getElementById("grow-b3").value = '0';
+    
+    let box1 = document.getElementById("item1");
+    let box2 = document.getElementById("item2");
+    let box3 = document.getElementById("item3");
+    
+    box1.style.flexGrow = '0';
+    box2.style.flexGrow = '0';
+    box3.style.flexGrow = '0';
+}
 function setflxgrow(v) {
     let grow1 = document.getElementById("grow-b1").value;
     let grow2 = document.getElementById("grow-b2").value;
@@ -49,26 +69,4 @@ function setflxgrow(v) {
     console.log(`Flex-Grow of Box 1: ${box1.style.flexGrow}`);
     console.log(`Flex-Grow of Box 2: ${box2.style.flexGrow}`);
     console.log(`Flex-Grow of Box 3: ${box3.style.flexGrow}`);
-}
-
-function resetbox() {
-    let f = document.getElementById("flCon");
-    f.style.gap = '0';
-    document.getElementById("gap").value = '0';
-    
-    f.style.flexDirection = "row";
-    f.style.justifyContent = "flex-start";
-    f.style.alignItems = "flex-start";
-    
-    document.getElementById("grow-b1").value = '0';
-    document.getElementById("grow-b2").value = '0';
-    document.getElementById("grow-b3").value = '0';
-    
-    let box1 = document.getElementById("item1");
-    let box2 = document.getElementById("item2");
-    let box3 = document.getElementById("item3");
-    
-    box1.style.flexGrow = '0';
-    box2.style.flexGrow = '0';
-    box3.style.flexGrow = '0';
 }
