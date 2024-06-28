@@ -14,7 +14,7 @@ function setflxdirect(v) {
 function setjustifycont(v) {
     let j = document.getElementById("flCon");
     j.style.justifyContent = v;
-    console.log(`Justify-Content: ${v.style.justifyContent}`);
+    console.log(`Justify-Content: ${j.style.justifyContent}`);
 }
 
 function setalignitems(v) {
