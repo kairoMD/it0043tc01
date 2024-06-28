@@ -7,8 +7,8 @@ function gap() {
 
 function setflxdirect(v) {
     let d = document.getElementById("flCon");
-    d.style.flexDirection = v === 1 ? "row" : "column";
-    console.log(`Flex-Direction: ${d.style.flexDirection}`);
+    d.style.flexDirection= v;
+    console.log(`Flex-direction: ${d.style.justifyContent}`);
 }
 
 function setjustifycont(v) {
@@ -21,7 +21,6 @@ function setalignitems(v) {
     let x = document.getElementById("flCon");
     x.style.alignItems = v;
     console.log(`Align-Items: ${x.style.alignItems}`);
-
 }
 
 function setflxgrow(v) {
@@ -31,7 +30,7 @@ function setflxgrow(v) {
     let box1 = document.getElementById("item1");
     let box2 = document.getElementById("item2");
     let box3 = document.getElementById("item3");
-    
+  
     if (v == 1) {
         box1.style.flexGrow = grow1;
     } else if (v == 2) {
@@ -53,20 +52,22 @@ function setflxgrow(v) {
 }
 
 function resetbox() {
-    let r = document.getElementById("flCon");
-    r.style.gap = '0';
+    let f = document.getElementById("flCon");
+    f.style.gap = '0';
     document.getElementById("gap").value = '0';
-    r.style.flexDirection = "row";
-    r.style.justifyContent = "flex-start";
-    r.style.alignItems = "flex-start";
-
+    
+    f.style.flexDirection = "row";
+    f.style.justifyContent = "flex-start";
+    f.style.alignItems = "flex-start";
+    
     document.getElementById("grow-b1").value = '0';
     document.getElementById("grow-b2").value = '0';
     document.getElementById("grow-b3").value = '0';
+    
     let box1 = document.getElementById("item1");
     let box2 = document.getElementById("item2");
     let box3 = document.getElementById("item3");
-
+    
     box1.style.flexGrow = '0';
     box2.style.flexGrow = '0';
     box3.style.flexGrow = '0';
