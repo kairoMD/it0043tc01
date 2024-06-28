@@ -10,32 +10,36 @@
     <div class="container">
         <div class="main-box">
           <h2>Reset Flexbox</h2>
-          <button onclick="resetFlexbox()">Reset</button>
-          <input type="text" id="gap">
-          <button onclick="setGap()">Gap</button>
+          <button onclick="resetbox()">Reset</button>
+          <input type="number" id="gap">
+          <button onclick="gap()">Gap</button>
+
           <h2>Flex Direction</h2>
-          <button onclick="setFlexDirection('row')">Row</button>
-          <button onclick="setFlexDirection('column')">Column</button>
+          <button onclick="setflxdirect(1)">Row</button>
+          <button onclick="setflxdirect(2)">Column</button>
+
           <h2>Justify Content</h2>
-          <button onclick="setJustifyContent('start')">Start</button>
-          <button onclick="setJustifyContent('center')">Center</button>
-          <button onclick="setJustifyContent('end')">End</button>
-          <button onclick="setJustifyContent('space-between')">Space Between</button>
-          <button onclick="setJustifyContent('space-around')">Space Around</button>
-          <button onclick="setJustifyContent('space-evenly')">Space Evenly</button>
+          <button onclick="setjustifycont('start')">Start</button>
+          <button onclick="setjustifycont('center')">Center</button>
+          <button onclick="setjustifycont('end')">End</button>
+          <button onclick="setjustifycont('space-between')">Space Between</button>
+          <button onclick="setjustifycont('space-around')">Space Around</button>
+          <button onclick="setjustifycont('space-evenly')">Space Evenly</button>
+
           <h2>Align Items</h2>
-          <button onclick="setAlignItems('start')">Start</button>
-          <button onclick="setAlignItems('center')">Center</button>
-          <button onclick="setAlignItems('end')">End</button>
+          <button onclick="setalignitems(1)">Start</button>
+          <button onclick="setalignitems(2)">Center</button>
+          <button onclick="setalignitems(3)">End</button>
+
           <h2>Flex Grow</h2>
-          <button onclick="setFlexGrow('reset')">Reset</button>
-          <button onclick="setFlexGrow('grow-all')">Grow All</button>
-          <input type="text" id="grow-b1" >
-          <button onclick="setFlexGrow('grow-b1')">Set Grow B-1</button>
-          <input type="text" id="grow-b2" >
-          <button onclick="setFlexGrow('grow-b2')">Set Grow B-2</button>
-          <input type="text" id="grow-b3">
-          <button onclick="setFlexGrow('grow-b3')">Set Grow B-3</button>
+          <button onclick="setflxgrow(0)">Reset</button>
+          <button onclick="setflxgrow(4)">Grow All</button>
+          <input type="number" id="grow-b1" >
+          <button onclick="setflxgrow(1)">Set Grow B-1</button>
+          <input type="number" id="grow-b2" >
+          <button onclick="setflxgrow(2)">Set Grow B-2</button>
+          <input type="number" id="grow-b3">
+          <button onclick="setflxgrow(3)">Set Grow B-3</button>
         </div>
 
         <div class="fcon" id="flCon">
