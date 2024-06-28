@@ -8,7 +8,7 @@ function gap() {
 function setflxdirect(v) {
     let d = document.getElementById("flCon");
     d.style.flexDirection= v;
-    console.log(`Flex-direction: ${d.style.justifyContent}`);
+    console.log(`Flex-direction: ${d.style.flexDirection}`);
 }
 
 function setjustifycont(v) {
