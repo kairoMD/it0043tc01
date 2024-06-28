@@ -13,20 +13,21 @@ function setflxdirect(v) {
 
 function setjustifycont(v) {
     let j = document.getElementById("flCon");
-    j.style.justifyContent = v;
+    j.style.justifyContent = c;
     console.log(`Justify-Content: ${j.style.justifyContent}`);
 }
 
 function setalignitems(v) {
-    let a = document.getElementById("flCon");
+    let x = document.getElementById("flCon");
     if (v == 1) {
-        a.style.alignItems = "start";
+        x.style.alignItems = "start";
     } else if (v == 2) {
-        a.style.alignItems = "center";
+        x.style.alignItems = "center";
     } else if (v == 3) {
-        a.style.alignItems = "end";
+        x.style.alignItems = "end";
     }
-    console.log(`Align-Items: ${a.style.alignItems}`);
+    console.log(`Align-Items: ${x.style.alignItems}`);
+    
 }
 
 function setflxgrow(v) {
