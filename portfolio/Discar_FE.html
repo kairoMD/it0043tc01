@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>First Portfolio</title>
+    <link rel="stylesheet" href="mstyles.css">
+    
+</head>
+
+<body>
+
+    <nav class="navi">
+        <div class="logo-text">Marc Louie Discar</div>
+        <div>
+            <ul class="menu">
+                <li><a href="#profile">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="burger-nav">
+        <div class="logo-text">Marc Louie Discar</div>
+        <div class="burger-menu">
+            <div class="burger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#works" onclick="toggleMenu()">Works</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                <li><a href="#faq" onclick="toggleMenu()">FAQ</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="pic-con">
+            <img src="prof-pic.png" alt="profile pic">
+        </div>
+        <div class="sec-text">
+            <p class="text-p1">Hello, I'm</p>
+            <h1 class="title">Marc Louie A. Discar</h1>
+            <p class="text-p2">Web developer / Cybersecurity Engineer</p>
+            <div class="social-m">
+                <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="but-con">
+                <button class="but but-color-2" onclick="location.href('#contact')">
+                    Contact Info
+                </button>
+                <button class="but but-color-1" onclick="location.href('#FAQ')">
+                    FAQ
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="text-p1">Get To Know Me More Here</p>
+        <h1 class="title">About Me</h1>
+        <div class="sec-con">
+            <div class="pic-cont">
+                <img src="about-pic.png" alt="About Pic" class="about-pic">
+            </div>
+            <div class="about-det-con">
+                <div class="about-con">
+                    <div class="det-con">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="av.js"></script>
+</body>
+
+</html>

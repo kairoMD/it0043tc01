@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0A0A0A;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+nav,
+.menu {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.menu {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.logo-text:hover {
+    cursor: default;
+}
+
+li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+li>a {
+    font-size: 1.2rem;
+    color: white;
+    box-shadow: inset 0 0 0 0 #808080;
+    margin: 0 -0.25rem;
+    padding: 0 0.25rem;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+li>a:hover {
+    box-shadow: inset 100px 0 0 0 #808080;
+    color: white;
+}
+
+/* BURGER MENU */
+
+#burger-nav {
+    display: none;
+}
+
+.burger-menu {
+    display: inline-block;
+    position: relative;
+}
+
+.burger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.burger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: fit-content;
+    max-width: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-width: 200px;
+}
+
+.burger-icon.open span:first-child {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* SECTION */
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container,
+#profile {
+    display: flex;
+}
+
+/* PROFILE */
+#profile {
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.pic-con {
+    display: flex;
+    height: 700px;
+    width: 600px;
+    margin: auto 0;
+}
+
+.sec-text {
+    align-self: center;
+    text-align: center;
+    color: white;
+}
+
+.sec-text p {
+    font-weight: 600;
+}
+
+.text-p1 {
+    text-align: center;
+    font-size: 1.75rem;
+
+}
+
+.text-p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* BUTTONS */
+.but-con {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.but-color-1,
+.but-color-2 {
+    border: white 0.1rem solid;
+    color: white;
+}
+
+.but-color-1:hover,
+.but-color-2:hover {
+    cursor: pointer;
+}
+
+.but-color-1:hover {
+    background-color: #808080;
+}
+
+.but-color-2:hover {
+    background-color: #808080;
+}
+
+
+.but {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 10px;
+}
+
+.but-con {
+    gap: 1rem;
+}
+
+.social-m a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 4rem;
+    height: 4rem;
+    border: 0.2rem solid white;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: white;
+    transition: 0.5s ease;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.social-m a:hover {
+    background: white;
+    color: #0A0A0A;
+}
+
+.social-m a i {
+    background: fixed;
+}
+
+
+@media (max-width: 1200px) {
+    .navi {
+        display: none;
+    }
+
+    #burger-nav {
+        display: flex;
+    }
+}
