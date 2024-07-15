@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 nav,
@@ -63,11 +63,6 @@ li>a:hover {
     display: none;
 }
 
-.burger-menu {
-    display: inline-block;
-    position: relative;
-}
-
 .burger-icon {
     display: flex;
     flex-direction: column;
@@ -77,8 +72,14 @@ li>a:hover {
     cursor: pointer;
 }
 
+
+.burger-menu {
+    display: inline-block;
+    position: relative;
+}
+
 .burger-icon span {
-    width: 100%;
+    width: 50%;
     height: 2px;
     background-color: white;
     transition: all 0.3s ease-in-out;
@@ -86,7 +87,7 @@ li>a:hover {
 
 .menu-links {
     position: absolute;
-    top: 100%;
+    top: 50%;
     right: 0;
     width: fit-content;
     max-width: 0;
@@ -125,6 +126,7 @@ li>a:hover {
 }
 
 /* SECTION */
+
 section {
     padding-top: 4vh;
     height: 96vh;
@@ -139,6 +141,7 @@ section {
 }
 
 /* PROFILE */
+
 #profile {
     justify-content: center;
     gap: 5rem;
@@ -147,8 +150,8 @@ section {
 
 .pic-con {
     display: flex;
-    height: 700px;
-    width: 600px;
+    height: 800px;
+    width: 700px;
     margin: auto 0;
 }
 
@@ -165,7 +168,6 @@ section {
 .text-p1 {
     text-align: center;
     font-size: 1.75rem;
-
 }
 
 .text-p2 {
@@ -179,6 +181,7 @@ section {
 }
 
 /* BUTTONS */
+
 .but-con {
     display: flex;
     justify-content: center;
@@ -203,7 +206,6 @@ section {
 .but-color-2:hover {
     background-color: #808080;
 }
-
 
 .but {
     font-weight: 600;
@@ -242,6 +244,124 @@ section {
     background: fixed;
 }
 
+/* ABOUT */
+#about {
+    position: relative;
+    color: white;
+
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    height: 80%;
+}
+
+.pic-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-containers {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.about-pic {
+    width: 25vw;
+    height: 28vw;
+    border: 2px solid;
+    border-radius: 50%;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.about-pic:hover {
+    box-shadow: 0 0 25px white;
+
+}
+/* SERVICES */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PROJECT */
+#project {
+    position: relative;
+    color: white;
+
+}
+
+.color-container {
+    border-color: rgb(163, 163, 163);
+    
+    align-items: center;
+    border: 0.1rem solid rgb(163, 163, 163);
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.new-details-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    padding: 0 2rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+
+}
+
+.project-title {
+    margin: 1rem;
+    color: white;
+}
+
+/* SERVICES */
+
+  
+/* Contact */
+
+/* FAQ */
 
 @media (max-width: 1200px) {
     .navi {
@@ -251,4 +371,5 @@ section {
     #burger-nav {
         display: flex;
     }
+
 }
