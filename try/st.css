@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 
 body {
@@ -18,7 +18,7 @@ p {
   color: black;
 }
 
-/* NAVIGATION BAR*/
+/* NAVIGATION BAR */
 
 nav,
 .nav-links {
@@ -59,7 +59,7 @@ a:hover {
 }
 
 
-/* burger MENU */
+/* BURGER MENU SECTION*/
 
 #burger-nav {
   display: none;
@@ -215,11 +215,13 @@ section {
 .socials-container a i {
   background: none;
 }
-.icon{
+
+.icon {
   width: 50px;
   height: 50px;
 }
-/* BUTTONS */
+
+/* BUTTONS SECTION*/
 
 .btn-container {
   display: flex;
@@ -263,6 +265,7 @@ section {
 #about {
   position: relative;
 }
+
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -283,15 +286,23 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  padding-left: 5px;
 }
 
 .about-details-container {
   justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
   flex-direction: column-reverse;
 }
-.pc{
+
+.pc {
   color: white;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
 .details-container {
   padding: 1.5rem;
   text-align: center;
@@ -300,57 +311,42 @@ section {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: lightgrey;
-  
+
 }
-.about-details-container:hover{
+
+.about-details-container:hover {
   border-radius: 10px;
-    box-shadow: 5px 5px 15px white;
-    transition: box-shadow 0.3s;
+  box-shadow: 5px 5px 15px white;
+  transition: box-shadow 0.3s;
 }
-
-
-/* .article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
-}
-
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
-} */
-
-
 
 /* PROJECTS SECTION */
 
 #projects {
   position: relative;
-  
+
 }
-.about-containers{
+
+.about-containers {
   margin-top: 100px;
 }
 
 .color-container {
   border-color: rgb(163, 163, 163);
   background: transparent;
-  
+
 }
-.cp{
+
+.cp {
   color: white;
 }
 
-.services-details-container:hover{
+.services-details-container:hover {
   border-radius: 10px;
-    box-shadow: 5px 5px 15px white;
-    transition: box-shadow 0.3s;
+  box-shadow: 5px 5px 15px white;
+  transition: box-shadow 0.3s;
 }
+
 .project-img {
   border-radius: 2rem;
   width: 100%;
@@ -384,10 +380,11 @@ article {
   flex-direction: column;
   color: black;
   margin-bottom: 100px;
-  
+  padding-right: 50px;
 }
-.services-container{
-  display: flex; 
+
+.services-container {
+  display: flex;
   gap: 1.5rem;
   margin-left: 50px;
   text-align: center;
@@ -395,15 +392,15 @@ article {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  
+
 }
 
-.project-imgg{
+.project-imgg {
   width: 150px;
   height: 150px;
 }
 
-/* CONTACT */
+/* CONTACT SECTION*/
 
 #contact {
   text-align: center;
@@ -487,12 +484,14 @@ textarea {
 .contact form .but {
   margin-top: 2rem;
 }
-#contact:hover{
+
+#contact:hover {
   border-radius: 10px;
-    box-shadow: 5px 5px 15px white;
-    transition: box-shadow 0.3s;
+  box-shadow: 5px 5px 15px white;
+  transition: box-shadow 0.3s;
 }
-/* FAQ */
+
+/* FAQ SECTION*/
 #faq {
   max-width: 800px;
   margin: 20px auto;
@@ -535,6 +534,7 @@ textarea {
 .faq-answer a:hover {
   text-decoration: underline;
 }
+
 /* FOOTER SECTION */
 
 footer {
@@ -561,18 +561,22 @@ footer p {
   #projects {
     height: fit-content;
   }
-  .about-details-container{
+
+  .about-details-container {
     height: fit-content;
-    
+
   }
-  .about-pic{
+
+  .about-pic {
     height: auto;
     width: auto;
   }
-  .about-containers{
+
+  .about-containers {
     margin-top: 0;
     flex-direction: row;
   }
+
   .pic-container {
     width: 275px;
     height: 275px;
@@ -618,6 +622,10 @@ footer p {
     margin-top: 0;
   }
 
+  .details-container {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -636,10 +644,12 @@ footer p {
     height: fit-content;
     margin-bottom: 2rem;
   }
-  #faq{
+
+  #faq {
     margin-top: 900px;
     align-items: center;
   }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
@@ -657,6 +667,7 @@ footer p {
 
   .services-details-container {
     justify-content: center;
+
   }
 
   .logo {
@@ -684,7 +695,7 @@ footer p {
   .title {
     font-size: 2rem;
   }
- 
+
   .text-container {
     text-align: justify;
   }
