@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="stylex.css" />
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <div class="logo">Marc Louie Discar</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#profile">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="burger-nav">
+        <div class="logo">Marc Louie Discar</div>
+        <div class="burger-menu">
+            <div class="burger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#faq" onclick="toggleMenu()">FAQ</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="pic-container">
+            <img src="prof-pic.png" alt="" />
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 class="title">Marc Louie A. Discar</h1>
+            <p class="section-text-p2">Web developer / CyberSecurity Engineer</p>
+            <div class="socials-container">
+                <a href="https://www.facebook.com/marclouie.discar17/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/d.louie18/"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/kairoMD"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="location.href='#faq'">
+                    FAQ
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <p class="section-text-p1">Get To Discover More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="pic-container">
+                <img src="about-picc.png" alt="" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="microchip.png" alt="" class="icon">
+                        <h3>Skills</h3>
+                        <p>Oriented in Microsoft Office applications<br />Computer Proficiency</p>
+                        <p>Presentation skills</p>
+
+                    </div>
+                    <div class="details-container">
+                        <img src="graduated.png" alt="" class="icon" />
+                        <h3>Education</h3>
+                        <p>Senior High School Graduate<br />2nd year in FEU Institute of Technology</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="dumbell.png" alt="" class="icon" />
+                        <h3>Strenghts</h3>
+                        <p>Team player<br />Respectful</p>
+                        <p>Hardworking</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p class="pc">
+                        I'm Marc Louie A. Discar, an Information Technology student specializing in cybersecurity. My
+                        goal in the future is to be able prevent and help people to have digital literacy. As an
+                        aspiring IT professional, I'm dedicated to achieving my goals and continously enhancing my
+                        skills. I aim to work as a security analayst, a cybersecurity manager or cybersecurity Engineer.
+                        I
+                        am determined to contribute to a company's success by enhancing security measures and mitigating
+                        potential risks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section-text-p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="services-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="project-container">
+                        <img src="first-proj.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="project-title">Pokemon Cards</h2>
+                    <div class="btn-container">
+                        <p class="cp">Created aA website with six pokemons shown using HTML and CSS elements, with
+                            flexbox used to get the
+                            desired style.</p>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://kairomd.github.io/it0043tc01/Discar&Ison_tsa4.html'">
+                            Github
+                        </button>
+
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="project-container">
+                        <img src="second-proj.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="project-title">Valorant Grid</h2>
+                    <div class="btn-container">
+                        <p class="cp">Created a website with valorant characters presented in a grid that allows grid
+                            cells to occupy other grid cells.</p>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://kairomd.github.io/it0043tc01/Discar_tsa5.html'">
+                            Github
+                        </button>
+
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="project-container">
+                        <img src="third-proj.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="project-title">GTA V Website</h2>
+                    <div class="btn-container">
+                        <p class="cp">Created a website featuring GTA V updates and articles, complete with media query,
+                            grid, and flexbox.</p>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://kairomd.github.io/it0043tc01/Discar_Simsuangco_tsa6.html'">
+                            Github
+                        </button>
+
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="project-container">
+                        <img src="four-proj.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="project-title">Flexbox Sim</h2>
+                    <div class="btn-container">
+                        <p class="cp">Created a website meant to replicate flexbox elements using CSS and Javascript.
+                        </p>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://kairomd.github.io/it0043tc01/Discar_Simsuangco_tsa7.html'">
+                            Github
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <p class="section-text-p1">My</p>
+        <h1 class="title">Services</h1>
+        <div class="section-container">
+            <div class="services-details-container">
+                <div class="services-container">
+                    <div class="details-container">
+                        <img src="settings-gears.png" alt="" class="project-imgg">
+                        <h3>IT Technician</h3>
+                        <p>Installing, maintaining, and repairing hardware and software components is what I do as an IT
+                            technician. I make sure computer systems and networks run well, debug technical problems,
+                            and assist end users. In order to avoid technical issues, I have to configure equipment, set
+                            up workstations, and do routine maintenance.
+                        </p>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="laptop.png" alt="" class="project-imgg">
+                        <h3>Online Tech Support</h3>
+                        <p>I help clients and staff who are having technological issues remotely as an Online Tech
+                            Support Specialist. By phone, chat, or email, I identify and fix hardware and software
+                            problems. My responsibilities include helping users solve simple difficulties, providing
+                            solutions and provide efficient support, I make use of my excellent communication abilities
+                            and in-depth knowledge
+                            of a variety of technologies.
+                        </p>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="tester.png" alt="" class="project-imgg">
+                        <h3>QA Tester</h3>
+                        <p>I evaluate software programs to make sure they satisfy requirements and operate as intended
+                            in my role as a QA tester. In order to find flaws and work with developers to fix problems,
+                            I create and carry out test plans. To guarantee the software is dependable and easy to use,
+                            I test it on functional, performance, and usability fronts. Defects must be found and fixed
+                            before the program is made available to users if I are to produce high-quality goods.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+   
+    <section id="contact">
+        <h2 class="heading"><span>Contact Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="but">
+        </form>
+    </section>
+    <div id="faq">
+        <h2>Frequently Asked Questions (FAQs)</h2>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Who are you?</h3>
+            <p class="faq-answer">I'm Marc Louie A. Discar, 19 years old , currently taking BS IT specialize in
+                CyberSecurity also an aspiring web developer with a
+                passion
+                for anti-hacking. With over 1 year of training, I focus on creating secure web applications and
+                implementing secure security measures.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">What services do you offer?</h3>
+            <p class="faq-answer">I offer a range of services including Being a IT Technician, Online Tech Support,
+                and QA Tester.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">What technologies do you work with?</h3>
+            <p class="faq-answer">I work with a variety of technologies including HTML, CSS, JavaScript,
+                and various cybersecurity tools.</p>
+        </div>
+    </div>
+    <footer>
+
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#profile">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Marc Discar. All Rights Reserved.</p>
+    </footer>
+    <script src="avv.js"></script>
+</body>
+
+</html>
