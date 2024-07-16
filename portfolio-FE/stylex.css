@@ -1,6 +1,5 @@
 /* GENERAL */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0;
@@ -10,7 +9,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #0A0A0A;
 }
 
@@ -628,7 +627,7 @@ footer p {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 460px) {
 
   #contact,
   footer {
@@ -655,6 +654,10 @@ footer p {
     flex-wrap: wrap;
   }
 
+  .about-containers {
+    padding-left: 60px;
+    padding-right: 20px;
+  }
   .nav-links li a {
     font-size: 1rem;
   }
