@@ -18,7 +18,7 @@ p {
   color: black;
 }
 
-/* DESKTOP NAV */
+/* NAVIGATION BAR*/
 
 nav,
 .nav-links {
@@ -59,18 +59,18 @@ a:hover {
 }
 
 
-/* HAMBURGER MENU */
+/* burger MENU */
 
-#hamburger-nav {
+#burger-nav {
   display: none;
 }
 
-.hamburger-menu {
+.burger-menu {
   position: relative;
   display: inline-block;
 }
 
-.hamburger-icon {
+.burger-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -79,7 +79,7 @@ a:hover {
   cursor: pointer;
 }
 
-.hamburger-icon span {
+.burger-icon span {
   width: 100%;
   height: 2px;
   background-color: white;
@@ -114,27 +114,27 @@ a:hover {
   max-height: 300px;
 }
 
-.hamburger-icon.open span:first-child {
+.burger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
 }
 
-.hamburger-icon.open span:nth-child(2) {
+.burger-icon.open span:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger-icon.open span:last-child {
+.burger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
-.hamburger-icon span:first-child {
+.burger-icon span:first-child {
   transform: none;
 }
 
-.hamburger-icon span:first-child {
+.burger-icon span:first-child {
   opacity: 1;
 }
 
-.hamburger-icon span:first-child {
+.burger-icon span:first-child {
   transform: none;
 }
 
@@ -161,29 +161,29 @@ section {
   height: 80vh;
 }
 
-.section__pic-container {
+.pic-container {
   display: flex;
   height: 300px;
   width: 300px;
   margin: auto 10;
 }
 
-.section__text {
+.section-text {
   align-self: center;
   text-align: center;
 }
 
-.section__text p {
+.section-text p {
   font-weight: 600;
 }
 
-.section__text__p1 {
+.section-text-p1 {
   text-align: center;
   font-size: 1.5rem;
   color: white;
 }
 
-.section__text__p2 {
+.section-text-p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
   color: white;
@@ -268,7 +268,7 @@ section {
   height: 80%;
 }
 
-.section__pic-container {
+.pic-container {
   height: 70vh;
   width: 70vw;
   margin: auto 0;
@@ -302,37 +302,12 @@ section {
   border-color: lightgrey;
   
 }
-
-/* EXPERIENCE SECTION */
-
-#experience {
-  position: relative;
+.about-details-container:hover{
+  border-radius: 10px;
+    box-shadow: 5px 5px 15px white;
+    transition: box-shadow 0.3s;
 }
 
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  color: black;
-  margin-bottom: 100px;
-  
-}
-.experience-container{
-  display: flex; 
-  gap: 1.5rem;
-  margin-left: 50px;
-  text-align: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  
-}
-
-.project-imgg{
-  width: 150px;
-  height: 150px;
-}
 
 /* .article-container {
   display: flex;
@@ -356,15 +331,26 @@ article {
 
 #projects {
   position: relative;
+  
 }
 .about-containers{
   margin-top: 100px;
 }
+
 .color-container {
   border-color: rgb(163, 163, 163);
   background: transparent;
+  
+}
+.cp{
+  color: white;
 }
 
+.services-details-container:hover{
+  border-radius: 10px;
+    box-shadow: 5px 5px 15px white;
+    transition: box-shadow 0.3s;
+}
 .project-img {
   border-radius: 2rem;
   width: 100%;
@@ -377,13 +363,44 @@ article {
 }
 
 .project-btn {
-  color: grey;
+  color: black;
   border-color: rgb(163, 163, 163);
 }
 
 .project-btn:hover {
-  color: grey;
+  color: black;
   border-color: rgb(163, 163, 163);
+}
+
+/* SERVICES SECTION */
+
+#services {
+  position: relative;
+}
+
+.services-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
+  margin-bottom: 100px;
+  
+}
+.services-container{
+  display: flex; 
+  gap: 1.5rem;
+  margin-left: 50px;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.project-imgg{
+  width: 150px;
+  height: 150px;
 }
 
 /* CONTACT */
@@ -470,7 +487,11 @@ textarea {
 .contact form .but {
   margin-top: 2rem;
 }
-
+#contact:hover{
+  border-radius: 10px;
+    box-shadow: 5px 5px 15px white;
+    transition: box-shadow 0.3s;
+}
 /* FAQ */
 #faq {
   max-width: 800px;
@@ -501,6 +522,7 @@ textarea {
 .faq-answer {
   margin-bottom: 10px;
   line-height: 1.6;
+  color: aliceblue;
 
 }
 
@@ -522,6 +544,7 @@ footer {
 
 footer p {
   text-align: center;
+  color: aliceblue;
 }
 
 @media screen and (max-width: 1200px) {
@@ -538,19 +561,36 @@ footer p {
   #projects {
     height: fit-content;
   }
+  .about-details-container{
+    height: fit-content;
+    
+  }
+  .about-pic{
+    height: auto;
+    width: auto;
+  }
+  .about-containers{
+    margin-top: 0;
+    flex-direction: row;
+  }
+  .pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
 }
 
-@media screen and (max-width: 900px) {
-  #desktop-nav {
+@media screen and (max-width: 1000px) {
+  #nav-bar {
     display: none;
   }
 
-  #hamburger-nav {
+  #burger-nav {
     display: flex;
   }
 
-  #experience,
-  .experience-details-container {
+  #services,
+  .services-details-container {
     margin-top: 2rem;
   }
 
@@ -568,7 +608,7 @@ footer p {
     margin: 0 5%;
   }
 
-  .section__pic-container {
+  .pic-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
@@ -577,9 +617,10 @@ footer p {
   .about-containers {
     margin-top: 0;
   }
+
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 550px) {
 
   #contact,
   footer {
@@ -595,7 +636,10 @@ footer p {
     height: fit-content;
     margin-bottom: 2rem;
   }
-
+  #faq{
+    margin-top: 900px;
+    align-items: center;
+  }
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
@@ -611,7 +655,7 @@ footer p {
     font-size: 1rem;
   }
 
-  .experience-details-container {
+  .services-details-container {
     justify-content: center;
   }
 
@@ -619,27 +663,28 @@ footer p {
     font-size: 1.5rem;
   }
 
-  .nav-links-container {
+  .nav-links {
+    font-size: 1rem;
     margin-top: 500px;
     flex-direction: row;
     gap: 0.5rem;
     text-align: center;
   }
 
-  .section__pic-container {
+  .pic-container {
     width: auto;
     height: 46vw;
     justify-content: center;
   }
 
-  .section__text__p2 {
+  .section-text-p2 {
     font-size: 1.25rem;
   }
 
   .title {
     font-size: 2rem;
   }
-
+ 
   .text-container {
     text-align: justify;
   }
